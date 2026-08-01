@@ -29,15 +29,16 @@ export function Turntable() {
     const paint = () => {
       const r = rotation.current;
       rig.style.transform = `rotateY(${r}deg)`;
-      for (let i = 0; i < cells.length; i++) {
+      cells.forEach((cell, i) => {
         // angle of this cell relative to viewer
-        let a = ((i * step + r) % 360 + 360) % 360;
+        let a = (((i * step + r) % 360) + 360) % 360;
         if (a > 180) a -= 360;
         const facing = Math.max(0, Math.cos((a * Math.PI) / 180));
-        cells[i].style.opacity = String(0.12 + Math.pow(facing, 3) * 0.88);
-        cells[i].style.zIndex = String(Math.round(facing * 100));
-      }
+        cell.style.opacity = String(0.12 + Math.pow(facing, 3) * 0.88);
+        cell.style.zIndex = String(Math.round(facing * 100));
+      });
     };
+
 
     const tick = (t: number) => {
       const dt = Math.min(0.05, (t - last) / 1000);
