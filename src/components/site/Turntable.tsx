@@ -34,7 +34,8 @@ export function Turntable() {
         let a = (((i * step + r) % 360) + 360) % 360;
         if (a > 180) a -= 360;
         const facing = Math.max(0, Math.cos((a * Math.PI) / 180));
-        cell.style.opacity = String(0.12 + Math.pow(facing, 3) * 0.88);
+        const vis = facing < 0.62 ? 0 : (facing - 0.62) / 0.38;
+        cell.style.opacity = String(Math.pow(vis, 0.6));
         cell.style.zIndex = String(Math.round(facing * 100));
       });
     };
@@ -90,7 +91,7 @@ export function Turntable() {
     velocity.current = 0;
   };
 
-  const radius = 210;
+  const radius = 330;
 
   return (
     <div className="relative select-none">
