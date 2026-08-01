@@ -100,7 +100,7 @@ export function Work() {
                   src={c.photo}
                   alt={c.title}
                   loading="lazy"
-                  className="aspect-[16/11] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="aspect-[16/11] w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
               )}
               <div className="p-6">

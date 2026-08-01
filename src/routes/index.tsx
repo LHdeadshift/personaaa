@@ -42,7 +42,8 @@ function Index() {
       <CursorGlow />
       <EasterEgg />
 
-      <header className="fixed inset-x-0 top-0 z-40 mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-border/50 bg-background/60 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <button
           onClick={() => (window as unknown as { partyTime?: () => void }).partyTime?.()}
           className="font-display text-xl tracking-tight"
@@ -52,6 +53,7 @@ function Index() {
           <span className="text-primary">.</span>
         </button>
         <ThemeToggle />
+        </div>
       </header>
 
       {/* Hero */}
