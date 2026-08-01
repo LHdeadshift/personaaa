@@ -6,6 +6,7 @@ import {
   aboutPortrait,
   hobbies,
   nowItems,
+  photoGallery,
   profile,
   skills,
   stats,
@@ -63,7 +64,7 @@ export function About() {
 
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="about" title="The short version" />
+      <SectionHeading eyebrow="about me" title="A little about me" />
       <div className="grid items-center gap-12 md:grid-cols-[1fr_0.8fr]">
         <Reveal>
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">{aboutParagraph}</p>
@@ -90,7 +91,7 @@ export function About() {
 export function Work() {
   return (
     <section id="work" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="work" title="What I actually do" />
+      <SectionHeading eyebrow="passions" title="What I'm focused on" />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {workCards.map((c, i) => (
           <Reveal key={c.title} delay={i * 100}>
@@ -120,7 +121,7 @@ export function Skills() {
   const { ref, visible } = useReveal<HTMLDivElement>(0.3);
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="skills" title="Where the hours went" />
+      <SectionHeading eyebrow="skills & pursuits" title="Things I love & excel at" />
       <div ref={ref} className="grid gap-5 sm:grid-cols-2">
         {skills.map((s, i) => (
           <div key={s.name}>
@@ -145,6 +146,71 @@ export function Skills() {
   );
 }
 
+/* ---------------- Photo Gallery ---------------- */
+export function Gallery() {
+  const [selected, setSelected] = useState<number | null>(null);
+  const active = selected === null ? null : photoGallery[selected];
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  return (
+    <section id="gallery" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+      <SectionHeading eyebrow="photos & aesthetics" title="Tanya's Photo Gallery ✨" />
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {photoGallery.map((p, i) => (
+          <Reveal key={p.src + i} delay={i * 60}>
+            <button
+              onClick={() => setSelected(i)}
+              className="group relative aspect-[3/4] w-full overflow-hidden rounded-3xl border border-border text-left shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[var(--glow)]"
+            >
+              <img
+                src={p.src}
+                alt={p.title}
+                loading="lazy"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="scrim absolute inset-0 opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute inset-x-0 bottom-0 p-3">
+                <p className="font-semibold text-xs text-white">{p.title}</p>
+                <p className="text-[11px] text-white/75 line-clamp-1">{p.caption}</p>
+              </div>
+            </button>
+          </Reveal>
+        ))}
+      </div>
+
+      {active && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-6 backdrop-blur-md"
+          onClick={() => setSelected(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="relative max-w-lg w-full text-center" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setSelected(null)}
+              className="absolute -top-12 right-0 rounded-full border border-white/30 px-4 py-1 font-mono text-xs uppercase tracking-widest text-white hover:bg-white/10"
+            >
+              close ✕
+            </button>
+            <div className="overflow-hidden rounded-3xl border border-white/20 bg-card shadow-2xl">
+              <img src={active.src} alt={active.title} className="max-h-[75vh] w-full object-contain bg-black/40" />
+              <div className="p-4 bg-background/90 text-left">
+                <h4 className="text-base font-semibold text-foreground">{active.title}</h4>
+                <p className="mt-1 text-xs text-muted-foreground">{active.caption}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
 /* ---------------- Hobbies + lightbox ---------------- */
 export function Hobbies() {
   const [open, setOpen] = useState<number | null>(null);
@@ -158,7 +224,7 @@ export function Hobbies() {
 
   return (
     <section id="hobbies" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="off the clock" title="Hobbies, mildly obsessive" />
+      <SectionHeading eyebrow="hobbies & obsessions" title="My favorite things" />
       <div className="grid auto-rows-[220px] grid-cols-2 gap-4 sm:auto-rows-[260px] lg:grid-cols-4">
         {hobbies.map((h, i) => (
           <Reveal
@@ -232,7 +298,7 @@ export function Timeline() {
   return (
     <section className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading eyebrow="journey" title="How I got here" />
+        <SectionHeading eyebrow="journey" title="My path so far" />
       </div>
       <div className="no-scrollbar flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4 lg:px-[max(1.5rem,calc((100vw-72rem)/2))]">
         {timeline.map((t, i) => (
@@ -284,18 +350,18 @@ export function QuoteAndNow() {
 }
 
 /* ---------------- Reactions + Contact ---------------- */
-const EMOJI = ["🔥", "👏", "🤯", "💜", "☕"];
+const EMOJI = ["📖", "🎀", "✨", "🌸", "☕", "💖"];
 
 export function Contact() {
-  const [counts, setCounts] = useState<number[]>(() => [12, 8, 5, 21, 3]);
+  const [counts, setCounts] = useState<number[]>(() => [24, 18, 35, 29, 14, 42]);
   const href = `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(profile.whatsappText)}`;
 
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 pb-32 pt-12 text-center">
       <Reveal>
-        <h2 className="font-display text-4xl sm:text-6xl">Let's make something.</h2>
+        <h2 className="font-display text-4xl sm:text-6xl">Say hi! 🎀</h2>
         <p className="mx-auto mt-4 max-w-md text-muted-foreground">
-          One message, no forms, no funnels. I reply faster than I should.
+          Send me a message anytime! Let's talk about books, music, writing & aesthetics.
         </p>
         <a
           href={href}
@@ -304,13 +370,13 @@ export function Contact() {
           className="glow-ring mt-10 inline-flex items-center gap-2 rounded-full px-8 py-4 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-1"
           style={{ background: "var(--gradient-accent)" }}
         >
-          Message me on WhatsApp
+          Message me on WhatsApp 💌
         </a>
       </Reveal>
 
       <Reveal delay={140} className="mt-16">
         <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
-          leave a reaction
+          leave a reaction ✨
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           {EMOJI.map((e, i) => (

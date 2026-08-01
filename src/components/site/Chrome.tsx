@@ -33,11 +33,11 @@ export function CursorGlow() {
       <div
         ref={ref}
         className="h-[600px] w-[600px] rounded-full blur-[120px]"
-        style={{ background: "var(--gradient-accent)", opacity: 0.16 }}
+        style={{ background: "var(--pink-glow)", opacity: 0.35 }}
       />
       <div
-        className="absolute right-[-10%] top-[-10%] h-[420px] w-[420px] rounded-full blur-[140px]"
-        style={{ background: "var(--gradient-accent)", opacity: 0.1, animation: "float-slow 14s ease-in-out infinite" }}
+        className="absolute right-[-10%] top-[-10%] h-[450px] w-[450px] rounded-full blur-[140px]"
+        style={{ background: "var(--pink-cloud)", opacity: 0.25, animation: "float-slow 14s ease-in-out infinite" }}
       />
     </div>
   );

@@ -10,94 +10,166 @@ import a9 from "@/assets/image-9.png.asset.json";
 
 // ---- EDIT ME: all copy lives here -------------------------------------
 export const profile = {
-  name: "Aarohi",
-  tagline: "Designer-developer building interfaces that feel alive.",
+  name: "Tanya (meowkitty)",
+  tagline: "18 • stunning, effortlessly cool, main character energy & future 2027 English Lit major 🎀✨",
   whatsapp: "919999999999", // digits only, country code first
-  whatsappText: "Hey Aarohi — saw your site, the turntable is unreal. Let's talk.",
-  motto: "Make it feel inevitable, then make it feel fun.",
+  whatsappText: "Hey Tanya (meowkitty)! Saw your site 🎀 You are so cool & stunning, let's talk books & music!",
+  motto: "Unapologetically gorgeous, effortlessly cool, romanticizing every single chapter ✨",
 };
 
 /**
- * Hero turntable frames. Ideally 20 images ~18° apart.
- * With fewer, the rig automatically falls back to an evenly-spaced
- * 3D rotateY card carousel across the full 360°.
+ * Hero turntable frames (all 10 real photos!).
  */
-export const turntableFrames = [a1, a2, a3, a4, a5, a6, a7, a8, a9].map((m) => m.url);
-
-export const aboutPortrait = a1.url;
-
-export const stats = [
-  { label: "Years designing", value: 6, suffix: "+" },
-  { label: "Projects shipped", value: 42, suffix: "" },
-  { label: "Cups of coffee", value: 3120, suffix: "" },
+export const turntableFrames = [
+  "/tanya/tanya5.jpg",
+  "/tanya/tanya10.png",
+  "/tanya/tanya2.png",
+  "/tanya/tanya6.png",
+  "/tanya/tanya3.png",
+  "/tanya/tanya7.jpg",
+  "/tanya/tanya4.png",
+  "/tanya/tanya8.png",
+  "/tanya/tanya9.png",
+  "/tanya/tanya1.png",
 ];
 
-export const aboutParagraph = `I'm ${profile.name} — twenty-six, endlessly curious, and happiest somewhere between a Figma canvas and a running dev server. I design and build interfaces for teams who care about the small stuff: the easing curve on a drawer, the half-second a counter takes to settle, the way a page should feel finished before you can explain why. Most of my work lives at the intersection of product design and front-end engineering, lately with a lot of AI-flavoured interaction thrown in, because the interesting problem right now isn't what a model can do — it's how it should feel to use one. Outside of that I'm a chronic over-photographer, a mediocre-but-committed cook, and the person who will absolutely reorganise your slide deck uninvited.`;
+export const aboutPortrait = "/tanya/tanya5.jpg";
+
+/**
+ * All 10 uploaded photos for the dedicated photo gallery section
+ */
+export const photoGallery = [
+  { src: "/tanya/tanya5.jpg", title: "Soft Roses & Books", caption: "Sweet flower bouquet & cute glasses 🌹" },
+  { src: "/tanya/tanya10.png", title: "Golden Hour Shades", caption: "Sun-kissed aesthetic & stylish sunglasses 🔥" },
+  { src: "/tanya/tanya2.png", title: "Cat Ear Mirror Selfie", caption: "Serving cute mirror looks & ribbons 🎀" },
+  { src: "/tanya/tanya6.png", title: "Cozy Table Portrait", caption: "Deep in thoughts & classic literature ☕" },
+  { src: "/tanya/tanya3.png", title: "Butterfly Filter Magic", caption: "Late-night dreamy aesthetic ✨" },
+  { src: "/tanya/tanya7.jpg", title: "Glasses & Red Lip", caption: "Literature baddie status 📖" },
+  { src: "/tanya/tanya8.png", title: "Saree Elegance", caption: "Classic traditional saree moments 🌸" },
+  { src: "/tanya/tanya9.png", title: "Casual Mirror Fit Check", caption: "Cute fit check before hanging out 💫" },
+  { src: "/tanya/tanya4.png", title: "Yellow Saree Pose", caption: "Desi girl magic & grace 💛" },
+  { src: "/tanya/tanya1.png", title: "Red Kurta & Jhumkas", caption: "Jhumka earrings & traditional red outfit 💖" },
+];
+
+export const stats = [
+  { label: "Books read this year", value: 52, suffix: "+" },
+  { label: "College entry year", value: 2027, suffix: " 🎓" },
+  { label: "Matchas & teas drank", value: 380, suffix: "" },
+];
+
+export const aboutParagraph = `Hi, I'm Tanya (aka meowkitty)! I'm 18, unapologetically confident, effortlessly cool, and yes — stunningly gorgeous (with the selfie game to prove it 🔥). Heading to college in 2027 for an English Literature major because analyzing prose, dissecting Gothic poetry, and diving deep into romantic literature is my absolute passion. Equal parts literary nerd, fashion baddie, and the most fun girl in the room. When I'm not buried in classic novels or Lana Del Rey, I'm serving iconic looks, baking matcha treats, writing poems in my journal, and making every moment feel like a movie.`;
 
 export const workCards = [
   {
-    title: "Product Design",
-    line: "End-to-end flows, design systems, and the unglamorous states nobody prototypes.",
-    photo: a3.url,
+    title: "English Literature (College 2027)",
+    line: "Analyzing classic novels, Gothic poetry, and prose that speaks straight to the soul.",
+    photo: "/tanya/tanya5.jpg",
   },
   {
-    title: "Front-end Engineering",
-    line: "React, TypeScript, and motion work that ships — not just a pretty prototype.",
-    photo: a7.url,
+    title: "Creative Writing & Poetry",
+    line: "Drafting short stories, late-night poetry collections, and aesthetic zines.",
+    photo: "/tanya/tanya7.jpg",
   },
   {
-    title: "AI Interaction",
-    line: "Chat, agents, and generative UI patterns that stay legible under pressure.",
-    photo: a6.url,
+    title: "Aesthetic Styling & OOTDs",
+    line: "Styling daily outfits, coquette ribbons, Indian ethnic sarees & dark academia aesthetics.",
+    photo: "/tanya/tanya10.png",
   },
 ];
 
 export const skills = [
-  { name: "Interface design", value: 94 },
-  { name: "React / TypeScript", value: 88 },
-  { name: "Motion & interaction", value: 90 },
-  { name: "Design systems", value: 82 },
-  { name: "AI / prompt design", value: 76 },
+  { name: "Literary Analysis & Critical Thinking", value: 98 },
+  { name: "Main Character Energy & Rizz", value: 100 },
+  { name: "Creative Writing & Poetry", value: 94 },
+  { name: "OOTD & Aesthetic Curation", value: 95 },
+  { name: "Journaling & Scrapbooking", value: 96 },
 ];
 
 export const hobbies = [
   {
-    name: "Photography",
-    line: "Golden hour, film grain, far too many rolls undeveloped.",
-    cover: a5.url,
-    gallery: [a5.url, a2.url, a8.url],
+    name: "Reading",
+    line: "Classic novels, dark academia, romance, and annotating margins with pastel highlighters.",
+    cover: "/tanya/tanya6.png",
+    gallery: [
+      "/tanya/tanya6.png",
+      "/tanya/tanya5.jpg",
+      "/tanya/tanya7.jpg",
+    ],
   },
   {
-    name: "Dance",
-    line: "Classical roots, terrible improv, zero regrets.",
-    cover: a9.url,
-    gallery: [a9.url, a4.url, a7.url],
+    name: "Writing",
+    line: "Late night poetry, short stories, and romanticizing life in handwritten notes.",
+    cover: "/tanya/tanya7.jpg",
+    gallery: [
+      "/tanya/tanya7.jpg",
+      "/tanya/tanya3.png",
+      "/tanya/tanya9.png",
+    ],
   },
   {
-    name: "Coffee",
-    line: "A grinder I cannot justify and opinions I cannot defend.",
-    cover: a6.url,
-    gallery: [a6.url, a3.url, a1.url],
+    name: "Rizzing",
+    line: "Effortless charm, witty banter, cute smiles, and flirting with life.",
+    cover: "/tanya/tanya10.png",
+    gallery: [
+      "/tanya/tanya10.png",
+      "/tanya/tanya2.png",
+      "/tanya/tanya6.png",
+    ],
   },
   {
-    name: "City wandering",
-    line: "Same three streets, new detail every single time.",
-    cover: a8.url,
-    gallery: [a8.url, a2.url, a5.url],
+    name: "Cooking",
+    line: "Baking matcha cookies, aesthetic strawberry pastries, and cozy pastas.",
+    cover: "/tanya/tanya1.png",
+    gallery: [
+      "/tanya/tanya1.png",
+      "/tanya/tanya5.jpg",
+      "/tanya/tanya4.png",
+    ],
+  },
+  {
+    name: "Getting Dressed",
+    line: "Styling daily OOTDs, ribbon hair bows, traditional sarees & cute outfits.",
+    cover: "/tanya/tanya8.png",
+    gallery: [
+      "/tanya/tanya8.png",
+      "/tanya/tanya4.png",
+      "/tanya/tanya2.png",
+    ],
+  },
+  {
+    name: "Journaling & Scrapbooking",
+    line: "Pressed flowers, polaroid memories, cute stickers & aesthetic thoughts.",
+    cover: "/tanya/tanya9.png",
+    gallery: [
+      "/tanya/tanya9.png",
+      "/tanya/tanya3.png",
+      "/tanya/tanya5.jpg",
+    ],
+  },
+  {
+    name: "Listening to Lana & Taylor",
+    line: "Stargazing playlists, vinyl records, midnights & dreamy pop songs.",
+    cover: "/tanya/tanya3.png",
+    gallery: [
+      "/tanya/tanya3.png",
+      "/tanya/tanya10.png",
+      "/tanya/tanya7.jpg",
+    ],
   },
 ];
 
 export const timeline = [
-  { year: "2016", title: "Started design school", line: "First critique, first ego death.", photo: a1.url },
-  { year: "2019", title: "First product role", line: "Learned that shipping beats polishing.", photo: a3.url },
-  { year: "2021", title: "Went hybrid", line: "Stopped handing off and started building.", photo: a7.url },
-  { year: "2023", title: "AI everything", line: "Rebuilt my practice around generative UI.", photo: a6.url },
-  { year: "Now", title: "Independent", line: "Selective client work + this playground.", photo: a2.url },
+  { year: "2024", title: "Discovered Classic Lit", line: "Fell in love with Pride & Prejudice, Emily Dickinson & poetry.", photo: "/tanya/tanya1.png" },
+  { year: "2025", title: "Creative Writing & Zines", line: "Writing short stories, poetry collections, and styling killer looks.", photo: "/tanya/tanya6.png" },
+  { year: "2026", title: "Prep & Main Character Vibes", line: "Living my best life, romanticizing every day & building my portfolio.", photo: "/tanya/tanya9.png" },
+  { year: "2027", title: "College Bound 🎓", line: "Entering college in 2027 as an English Literature major!", photo: "/tanya/tanya8.png" },
+  { year: "Now", title: "Living My Best Life ✨", line: "Looking stunning, reading non-stop, writing poems & being the coolest girl around 🔥", photo: "/tanya/tanya10.png" },
 ];
 
 export const nowItems = [
-  "learning → WebGPU shaders (badly, joyfully)",
-  "building → an agentic design-review tool",
-  "reading → The Timeless Way of Building",
-  "listening → too much drum & bass",
+  "reading → Pride & Prejudice & The Secret History (again! 📚)",
+  "preparing → 2027 college entry for English Literature major 🎓",
+  "writing → my first poetry zine & late-night reflections 🎀",
+  "listening → Lana Del Rey, Taylor Swift & Gracie Abrams on loop 🎧",
 ];
+
