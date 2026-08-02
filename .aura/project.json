@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "name": "aura-showcase",
   "template": "tanstack_start_ts_current",
-  "revision": "tanstack_start_ts_current-ef9d4b21c54a"
+  "revision": "aura-showcase-v1"
 }
