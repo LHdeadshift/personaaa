@@ -22,13 +22,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Personal website of Harshita, 18-year-old aspiring fashion magazine journalist pursuing BJMC in Mumbai & world explorer.",
+          "Personal website of Tanya (meowkitty), 18-year-old bookworm & aspiring English Literature major.",
       },
       { property: "og:title", content: `${profile.name} — Personal Portfolio` },
       {
         property: "og:description",
         content:
-          "Fashion journalism, BJMC Mumbai, world exploration, make up & styling, 3D photo turntable, and personal pursuits.",
+          "Books, creative writing, aesthetics, 3D photo turntable, and personal pursuits.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -62,7 +62,7 @@ function Index() {
         <div className="order-2 flex-1 lg:order-1">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-              personal space / fashion journalism & world vibes ✨
+              personal space / literature & vibes ✨
             </p>
             <h1 className="mt-4 text-5xl font-semibold leading-[0.95] tracking-tight sm:text-7xl">
               {profile.name}
@@ -89,7 +89,7 @@ function Index() {
       <Contact />
 
       <footer className="border-t border-border py-10 text-center font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-        made with 💕 for Harshita · made by oneiros · ↑↑↓↓←→←→ba for magic
+        made with 💕 for Tanya (meowkitty) · made by oneiros · ↑↑↓↓←→←→ba for magic
       </footer>
     </main>
   );
