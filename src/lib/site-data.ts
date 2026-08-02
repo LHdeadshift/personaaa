@@ -10,10 +10,10 @@ import a9 from "@/assets/image-9.png.asset.json";
 
 // ---- EDIT ME: all copy lives here -------------------------------------
 export const profile = {
-  name: "Tanya (meowkitty)",
+  name: "meowkitty",
   tagline: "18 • stunning, effortlessly cool, main character energy & future 2027 English Lit major 🎀✨",
   whatsapp: "919999999999", // digits only, country code first
-  whatsappText: "Hey Tanya (meowkitty)! Saw your site 🎀 You are so cool & stunning, let's talk books & music!",
+  whatsappText: "Hey meowkitty! Saw your site 🎀 You are so cool & stunning, let's talk books & music!",
   motto: "Unapologetically gorgeous, effortlessly cool, romanticizing every single chapter ✨",
 };
 
@@ -57,7 +57,7 @@ export const stats = [
   { label: "Matchas & teas drank", value: 380, suffix: "" },
 ];
 
-export const aboutParagraph = `Hi, I'm Tanya (aka meowkitty)! I'm 18, unapologetically confident, effortlessly cool, and yes — stunningly gorgeous (with the selfie game to prove it 🔥). Heading to college in 2027 for an English Literature major because analyzing prose, dissecting Gothic poetry, and diving deep into romantic literature is my absolute passion. Equal parts literary nerd, fashion baddie, and the most fun girl in the room. When I'm not buried in classic novels or Lana Del Rey, I'm serving iconic looks, baking matcha treats, writing poems in my journal, and making every moment feel like a movie.`;
+export const aboutParagraph = `Hi, I'm meowkitty! I'm 18, unapologetically confident, effortlessly cool, and yes — stunningly gorgeous (with the selfie game to prove it 🔥). Heading to college in 2027 for an English Literature major because analyzing prose, dissecting Gothic poetry, and diving deep into romantic literature is my absolute passion. Equal parts literary nerd, fashion baddie, and the most fun girl in the room. When I'm not buried in classic novels or Lana Del Rey, I'm serving iconic looks, baking matcha treats, writing poems in my journal, and making every moment feel like a movie.`;
 
 export const workCards = [
   {
