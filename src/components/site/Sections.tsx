@@ -159,7 +159,7 @@ export function Gallery() {
 
   return (
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="photos & aesthetics" title="meowkitty's Photo Gallery ✨" />
+      <SectionHeading eyebrow="photos & aesthetics" title="Harshita's Photo Gallery ✨" />
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
         {photoGallery.map((p, i) => (
           <Reveal key={p.src + i} delay={i * 60}>
@@ -350,7 +350,7 @@ export function QuoteAndNow() {
 }
 
 /* ---------------- Reactions + Contact ---------------- */
-const EMOJI = ["📖", "🎀", "✨", "🌸", "☕", "💖"];
+const EMOJI = ["💄", "💅", "✈️", "📰", "✨", "💖"];
 
 export function Contact() {
   const [counts, setCounts] = useState<number[]>(() => [24, 18, 35, 29, 14, 42]);
@@ -359,9 +359,9 @@ export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 pb-32 pt-12 text-center">
       <Reveal>
-        <h2 className="font-display text-4xl sm:text-6xl">Say hi! 🎀</h2>
+        <h2 className="font-display text-4xl sm:text-6xl">Say hi! 💄</h2>
         <p className="mx-auto mt-4 max-w-md text-muted-foreground">
-          Send me a message anytime! Let's talk about books, music, writing & aesthetics.
+          Send me a message anytime! Let's talk about fashion journalism, travel, makeup, getting dressed & aesthetics.
         </p>
         <a
           href={href}
