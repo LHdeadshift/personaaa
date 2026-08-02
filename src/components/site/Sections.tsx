@@ -159,7 +159,7 @@ export function Gallery() {
 
   return (
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="photos & aesthetics" title="Tanya's Photo Gallery ✨" />
+      <SectionHeading eyebrow="photos & aesthetics" title="meowkitty's Photo Gallery ✨" />
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
         {photoGallery.map((p, i) => (
           <Reveal key={p.src + i} delay={i * 60}>

@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Personal website of Tanya (meowkitty), 18-year-old bookworm & aspiring English Literature major.",
+          "Personal website of meowkitty, 18-year-old bookworm & aspiring English Literature major.",
       },
       { property: "og:title", content: `${profile.name} — Personal Portfolio` },
       {
@@ -89,7 +89,7 @@ function Index() {
       <Contact />
 
       <footer className="border-t border-border py-10 text-center font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-        made with 💕 for Tanya (meowkitty) · made by oneiros · ↑↑↓↓←→←→ba for magic
+        made with 💕 for meowkitty · made by oneiros · ↑↑↓↓←→←→ba for magic
       </footer>
     </main>
   );
