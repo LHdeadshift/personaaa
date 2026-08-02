@@ -10,11 +10,11 @@ import a9 from "@/assets/image-9.png.asset.json";
 
 // ---- EDIT ME: all copy lives here -------------------------------------
 export const profile = {
-  name: "meowkitty",
-  tagline: "18 • stunning, effortlessly cool, main character energy & future 2027 English Lit major 🎀✨",
+  name: "Tanya",
+  tagline: "18 • stunning, effortlessly cool, main character energy & future 2027 BJMC major (Fashion Journalism) 🎀✨",
   whatsapp: "919999999999", // digits only, country code first
-  whatsappText: "Hey meowkitty! Saw your site 🎀 You are so cool & stunning, let's talk books & music!",
-  motto: "Unapologetically gorgeous, effortlessly cool, romanticizing every single chapter ✨",
+  whatsappText: "Hey Tanya! Saw your site 🎀 You are so cool & stunning, let's talk fashion & journalism!",
+  motto: "Unapologetically gorgeous, effortlessly cool, serving looks & romanticizing every chapter ✨",
 };
 
 /**
@@ -39,12 +39,12 @@ export const aboutPortrait = "/meowkitty/meowkitty5.jpg";
  * All 10 uploaded photos for the dedicated photo gallery section
  */
 export const photoGallery = [
-  { src: "/meowkitty/meowkitty5.jpg", title: "Soft Roses & Books", caption: "Sweet flower bouquet & cute glasses 🌹" },
+  { src: "/meowkitty/meowkitty5.jpg", title: "Soft Roses & Style", caption: "Sweet flower bouquet & cute glasses 🌹" },
   { src: "/meowkitty/meowkitty10.png", title: "Golden Hour Shades", caption: "Sun-kissed aesthetic & stylish sunglasses 🔥" },
   { src: "/meowkitty/meowkitty2.png", title: "Cat Ear Mirror Selfie", caption: "Serving cute mirror looks & ribbons 🎀" },
-  { src: "/meowkitty/meowkitty6.png", title: "Cozy Table Portrait", caption: "Deep in thoughts & classic literature ☕" },
+  { src: "/meowkitty/meowkitty6.png", title: "Cozy Table Portrait", caption: "Deep in thoughts & editorial ideas ☕" },
   { src: "/meowkitty/meowkitty3.png", title: "Butterfly Filter Magic", caption: "Late-night dreamy aesthetic ✨" },
-  { src: "/meowkitty/meowkitty7.jpg", title: "Glasses & Red Lip", caption: "Literature baddie status 📖" },
+  { src: "/meowkitty/meowkitty7.jpg", title: "Glasses & Red Lip", caption: "Fashion baddie status 📖" },
   { src: "/meowkitty/meowkitty8.png", title: "Saree Elegance", caption: "Classic traditional saree moments 🌸" },
   { src: "/meowkitty/meowkitty9.png", title: "Casual Mirror Fit Check", caption: "Cute fit check before hanging out 💫" },
   { src: "/meowkitty/meowkitty4.png", title: "Yellow Saree Pose", caption: "Desi girl magic & grace 💛" },
@@ -52,63 +52,43 @@ export const photoGallery = [
 ];
 
 export const stats = [
-  { label: "Books read this year", value: 52, suffix: "+" },
-  { label: "College entry year", value: 2027, suffix: " 🎓" },
-  { label: "Matchas & teas drank", value: 380, suffix: "" },
+  { label: "Articles & features written", value: 35, suffix: "+" },
+  { label: "College entry year (BJMC)", value: 2027, suffix: " 🎓" },
+  { label: "OOTDs & looks styled", value: 450, suffix: "+" },
 ];
 
-export const aboutParagraph = `Hi, I'm meowkitty! I'm 18, unapologetically confident, effortlessly cool, and yes — stunningly gorgeous (with the selfie game to prove it 🔥). Heading to college in 2027 for an English Literature major because analyzing prose, dissecting Gothic poetry, and diving deep into romantic literature is my absolute passion. Equal parts literary nerd, fashion baddie, and the most fun girl in the room. When I'm not buried in classic novels or Lana Del Rey, I'm serving iconic looks, baking matcha treats, writing poems in my journal, and making every moment feel like a movie.`;
+export const aboutParagraph = `Hi, I'm Tanya! I'm 18, unapologetically confident, effortlessly cool, and yes — stunningly gorgeous (with the selfie game to prove it 🔥). Heading to college in 2027 for BJMC (Bachelor of Journalism and Mass Communication) with a ultimate goal of pursuing Fashion Journalism because curating trends, writing editorial features, and blending style with storytelling is my absolute passion. Equal parts fashion baddie, media enthusiast, and the most fun girl in the room. When I'm not serving iconic looks or texting guys, I'm styling outfits, rizzing, getting dressed, and making every moment feel like a magazine cover.`;
 
 export const workCards = [
   {
-    title: "English Literature (College 2027)",
-    line: "Analyzing classic novels, Gothic poetry, and prose that speaks straight to the soul.",
+    title: "BJMC & Fashion Journalism (College 2027)",
+    line: "Future 2027 BJMC student pursuing a career in fashion journalism, editorial feature writing, and media trends.",
     photo: "/meowkitty/meowkitty5.jpg",
   },
   {
-    title: "Creative Writing & Poetry",
-    line: "Drafting short stories, late-night poetry collections, and aesthetic zines.",
-    photo: "/meowkitty/meowkitty7.jpg",
+    title: "Aesthetic Styling & Fit Checks",
+    line: "Curating daily OOTDs, ribbon hair bows, saree looks, and high-fashion aesthetics.",
+    photo: "/meowkitty/meowkitty10.png",
   },
   {
-    title: "Aesthetic Styling & OOTDs",
-    line: "Styling daily outfits, coquette ribbons, Indian ethnic sarees & dark academia aesthetics.",
-    photo: "/meowkitty/meowkitty10.png",
+    title: "Editorial Writing & Storytelling",
+    line: "Drafting trend reports, style columns, late-night reflections, and fashion zines.",
+    photo: "/meowkitty/meowkitty7.jpg",
   },
 ];
 
 export const skills = [
-  { name: "Literary Analysis & Critical Thinking", value: 98 },
+  { name: "Fashion Journalism & Editorial Writing", value: 98 },
+  { name: "Styling & Fit Curation", value: 97 },
   { name: "Main Character Energy & Rizz", value: 100 },
-  { name: "Creative Writing & Poetry", value: 94 },
-  { name: "OOTD & Aesthetic Curation", value: 95 },
-  { name: "Journaling & Scrapbooking", value: 96 },
+  { name: "Social Banter & Texting Guys", value: 96 },
+  { name: "Media Trends & Content Curation", value: 95 },
 ];
 
 export const hobbies = [
   {
-    name: "Reading",
-    line: "Classic novels, dark academia, romance, and annotating margins with pastel highlighters.",
-    cover: "/meowkitty/meowkitty6.png",
-    gallery: [
-      "/meowkitty/meowkitty6.png",
-      "/meowkitty/meowkitty5.jpg",
-      "/meowkitty/meowkitty7.jpg",
-    ],
-  },
-  {
-    name: "Writing",
-    line: "Late night poetry, short stories, and romanticizing life in handwritten notes.",
-    cover: "/meowkitty/meowkitty7.jpg",
-    gallery: [
-      "/meowkitty/meowkitty7.jpg",
-      "/meowkitty/meowkitty3.png",
-      "/meowkitty/meowkitty9.png",
-    ],
-  },
-  {
-    name: "Rizzing",
-    line: "Effortless charm, witty banter, cute smiles, and flirting with life.",
+    name: "Styling",
+    line: "Curating iconic outfits, mixing high fashion with street style, and creating aesthetic looks.",
     cover: "/meowkitty/meowkitty10.png",
     gallery: [
       "/meowkitty/meowkitty10.png",
@@ -117,18 +97,8 @@ export const hobbies = [
     ],
   },
   {
-    name: "Cooking",
-    line: "Baking matcha cookies, aesthetic strawberry pastries, and cozy pastas.",
-    cover: "/meowkitty/meowkitty1.png",
-    gallery: [
-      "/meowkitty/meowkitty1.png",
-      "/meowkitty/meowkitty5.jpg",
-      "/meowkitty/meowkitty4.png",
-    ],
-  },
-  {
     name: "Getting Dressed",
-    line: "Styling daily OOTDs, ribbon hair bows, traditional sarees & cute outfits.",
+    line: "Styling daily OOTDs, ribbon hair bows, traditional sarees & cute fit checks.",
     cover: "/meowkitty/meowkitty8.png",
     gallery: [
       "/meowkitty/meowkitty8.png",
@@ -137,17 +107,37 @@ export const hobbies = [
     ],
   },
   {
-    name: "Journaling & Scrapbooking",
-    line: "Pressed flowers, polaroid memories, cute stickers & aesthetic thoughts.",
-    cover: "/meowkitty/meowkitty9.png",
+    name: "Rizzing",
+    line: "Effortless charm, witty banter, cute smiles, and flirting with life.",
+    cover: "/meowkitty/meowkitty7.jpg",
     gallery: [
-      "/meowkitty/meowkitty9.png",
+      "/meowkitty/meowkitty7.jpg",
       "/meowkitty/meowkitty3.png",
-      "/meowkitty/meowkitty5.jpg",
+      "/meowkitty/meowkitty9.png",
     ],
   },
   {
-    name: "Listening to Lana & Taylor",
+    name: "Texting Guys",
+    line: "Flirty banter, late-night chats, keeping them on their toes, and iconic replies.",
+    cover: "/meowkitty/meowkitty9.png",
+    gallery: [
+      "/meowkitty/meowkitty9.png",
+      "/meowkitty/meowkitty5.jpg",
+      "/meowkitty/meowkitty3.png",
+    ],
+  },
+  {
+    name: "Fashion Journalism",
+    line: "Writing trend reports, editorial pieces, runway reviews, and fashion stories.",
+    cover: "/meowkitty/meowkitty6.png",
+    gallery: [
+      "/meowkitty/meowkitty6.png",
+      "/meowkitty/meowkitty5.jpg",
+      "/meowkitty/meowkitty7.jpg",
+    ],
+  },
+  {
+    name: "Listening to Music",
     line: "Stargazing playlists, vinyl records, midnights & dreamy pop songs.",
     cover: "/meowkitty/meowkitty3.png",
     gallery: [
@@ -159,17 +149,17 @@ export const hobbies = [
 ];
 
 export const timeline = [
-  { year: "2024", title: "Discovered Classic Lit", line: "Fell in love with Pride & Prejudice, Emily Dickinson & poetry.", photo: "/meowkitty/meowkitty1.png" },
-  { year: "2025", title: "Creative Writing & Zines", line: "Writing short stories, poetry collections, and styling killer looks.", photo: "/meowkitty/meowkitty6.png" },
-  { year: "2026", title: "Prep & Main Character Vibes", line: "Living my best life, romanticizing every day & building my portfolio.", photo: "/meowkitty/meowkitty9.png" },
-  { year: "2027", title: "College Bound 🎓", line: "Entering college in 2027 as an English Literature major!", photo: "/meowkitty/meowkitty8.png" },
-  { year: "Now", title: "Living My Best Life ✨", line: "Looking stunning, reading non-stop, writing poems & being the coolest girl around 🔥", photo: "/meowkitty/meowkitty10.png" },
+  { year: "2024", title: "Discovered Fashion & Media", line: "Fell in love with fashion magazines, editorial styling & media.", photo: "/meowkitty/meowkitty1.png" },
+  { year: "2025", title: "Styling & Feature Writing", line: "Curating daily looks, writing fashion pieces & refining my aesthetic.", photo: "/meowkitty/meowkitty6.png" },
+  { year: "2026", title: "Prep & Main Character Vibes", line: "Living my best life, building my fashion portfolio & prepping for college.", photo: "/meowkitty/meowkitty9.png" },
+  { year: "2027", title: "College Bound (BJMC) 🎓", line: "Entering college in 2027 as a BJMC major focusing on Fashion Journalism!", photo: "/meowkitty/meowkitty8.png" },
+  { year: "Now", title: "Living My Best Life ✨", line: "Looking stunning, styling fits, texting guys, rizzing & being the coolest girl around 🔥", photo: "/meowkitty/meowkitty10.png" },
 ];
 
 export const nowItems = [
-  "reading → Pride & Prejudice & The Secret History (again! 📚)",
-  "preparing → 2027 college entry for English Literature major 🎓",
-  "writing → my first poetry zine & late-night reflections 🎀",
-  "listening → Lana Del Rey, Taylor Swift & Gracie Abrams on loop 🎧",
+  "styling → daily OOTDs & trend moodboards 👗",
+  "preparing → 2027 college entry for BJMC major 🎓",
+  "focus → Fashion Journalism & editorial feature writing 📰",
+  "vibing → rizzing, texting guys & living main character energy ✨",
 ];
 

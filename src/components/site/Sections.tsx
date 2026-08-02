@@ -159,7 +159,7 @@ export function Gallery() {
 
   return (
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="photos & aesthetics" title="meowkitty's Photo Gallery ✨" />
+      <SectionHeading eyebrow="photos & aesthetics" title={`${profile.name}'s Photo Gallery ✨`} />
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
         {photoGallery.map((p, i) => (
           <Reveal key={p.src + i} delay={i * 60}>
@@ -361,7 +361,7 @@ export function Contact() {
       <Reveal>
         <h2 className="font-display text-4xl sm:text-6xl">Say hi! 🎀</h2>
         <p className="mx-auto mt-4 max-w-md text-muted-foreground">
-          Send me a message anytime! Let's talk about books, music, writing & aesthetics.
+          Send me a message anytime! Let's talk about fashion, journalism, styling & aesthetics.
         </p>
         <a
           href={href}
